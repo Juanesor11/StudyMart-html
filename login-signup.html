@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">StudyMart</a>
+        <nav>
+            <a href="index.html#inicio">Inicio</a>
+            <a href="comprar">Comprar</a>
+            <a href="vender">Vender</a>
+            <a href="#reseñas">Reseñas</a>
+            <a href="#Nosotros">Sobre Nosotros</a>
+        </nav>
+        <div class="iconos">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+    <main class="login-signup">
+        <h1>StudyMart</h1>
+        <div class="wrapper">
+            <div class="logInBox">
+                <h2>Iniciar sesión</h2>
+                <form>
+                    <div class="logInInput">
+                        <label>Nombre de usuario <br></label>
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <input type="text" required class="user">
+                    </div>
+                    <div class="logInInput">
+                        <label>Contraseña <br></label>
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required id="contraseña">
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Recordarme</label>
+                        <p><a href="#">Olvidé mi contraseña</a></p>
+                    </div>
+                    <button type="submit" class="loginBtn" id="Loginbtn" onclick="location.href='index.html'">Iniciar sesión</button>
+                    <div class="login-register">
+                        <p>No tienes una cuenta? </p> <p  class="signUpLink">Registrate ahora</p>
+                    </div>
+                </form>
+            </div>
+            <div class="signUpBox">
+                <h2>Registrate</h2>
+                <form>
+                    <div class="logInInput">
+                        <label>Nombre de usuario <br></label>
+                        <span class="icon"><i class="fa-solid fa-user"></i></i></span>
+                        <input type="text" required class="user">
+                    </div>
+                    <div class="logInInput">
+                        <label>Email <br></label>
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" required>
+                    </div>
+                    <div class="logInInput">
+                        <label>Contraseña <br></label>
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" required>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Acepto los terminos y condiciones</label>
+                    </div>
+                    <button type="submit" class="registerBtn" id="registerBtn" onclick="location.href='index.html'">Registrate</button>
+                    <div class="login-register">
+                        <p>Ya tienes una cuenta? </p> <p class="loginLink">Iniciar sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="creditos">
+            <p>Copyright &copy; 2024 [Nombre de la empresa].  Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="login-signupWrapper.js"></script>
+</body>
+</html>

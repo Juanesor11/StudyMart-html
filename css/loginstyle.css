@@ -1,0 +1,91 @@
+.login-signup {
+    min-height: 100vh;
+    margin-top: 90px;
+}
+.login-signup h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.wrapper {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    transition: .2s ease;
+    margin: auto;
+}
+
+.signUpBox {
+    display: none;
+}
+
+.logInBox h2, .signUpBox h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logInBox input, .signUpBox input {
+    border-bottom: solid .1px ;
+    border-radius: 3px;
+    margin-left: 10px;
+    background-color: #f1f1f1;
+}
+
+.logInInput {
+    margin: 20px -5px;
+    text-align: center;
+}
+
+.logInInput label {
+    font-size: 1.1rem;
+}
+
+.remember-forgot{
+    color: black;
+    margin: -10px 0 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.remember-forgot p a {
+    color: #0F456B;
+    font-weight: 600;
+}
+
+.remember-forgot p a:hover{
+    text-decoration: underline;
+}
+
+.loginBtn, .registerBtn {
+    display: flex;
+    border-radius: 40px;
+    margin: auto;
+    margin-bottom: 5px;
+    background: black;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.loginBtn:hover, .registerBtn:hover {
+    background-color: #0F456B;
+}
+
+.login-register {
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.signUpLink, .loginLink{
+    color: #0F456B;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signUpLink:hover, .loginLink:hover {
+    text-decoration: underline ;
+}

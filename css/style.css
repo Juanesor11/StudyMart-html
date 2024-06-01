@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap');
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    outline: none; border: none;
+    color: black;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    scroll-snap-type: y proximity ;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+@keyframes scroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    padding: 15px 5%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color: whitesmoke;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: #184B6F;
+}
+
+header nav a {
+    font-size: 1.1rem;
+    padding: 0 20px;
+}
+
+header a:hover {
+    color: #0F456B;
+}
+
+header .iconos {
+    font-size: 1.3rem;
+}
+
+header .iconos a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+section {
+    scroll-snap-align: start;
+}
+
+.inicio {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px 5%;
+    background: url(FOTO!!) no-repeat; /* AGREGAR FOTO DE FONDO */
+    background-size: cover;
+    background-position: center;
+    z-index: 99;
+}
+
+.inicio .contenido {
+    max-width: 50vw;
+    margin-top: 80px;
+}
+
+.inicio .contenido h3 {
+    font-size: 3.8rem;
+}
+
+.inicio .contenido h5 {
+    font-size: 2.2rem;
+    color: #0F456B;
+}
+
+.inicio .contenido p {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    max-width: 650px;
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 40px;
+    background: black;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0F456B;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.LosMasVendidos {
+    text-align: center;
+    animation: scroll 1s linear;
+    animation-timeline: scroll();
+}
+
+.LosMasVendidos .titulo {
+    background-color: #0F456B;
+    user-select: none;
+}
+
+.LosMasVendidos .titulo h1 {
+padding-top: 50px;
+color: white;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 8px;
+}
+
+.LosMasVendidos .titulo span{
+    color: white;
+    font-size: 3rem;
+}
+
+.LosMasVendidos .content {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.LosMasVendidos .content .item {
+    max-width: 30vw;
+    margin-top: 15px;
+}
+
+.LosMasVendidos .content .item img{
+    max-width: 20vw;
+    max-height: 100%;
+}
+
+.LosMasVendidos .content .item h2{
+    font-family: "Baskervville", serif;
+    color: #0F456B;
+}
+
+.LosMasVendidos a {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
