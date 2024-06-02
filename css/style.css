@@ -154,6 +154,7 @@ section {
 .LosMasVendidos .content .item {
     max-width: 25vw;
     margin-top: 15px;
+    border-radius: 5px;
 }
 
 .LosMasVendidos .content .item:hover {
@@ -166,10 +167,15 @@ section {
     max-height: 100%;
 }
 
+.LosMasVendidos .content .item img:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .LosMasVendidos .content .item h2{
     font-family: "Merriweather", serif;
     color: #0F456B;
-    font-style: italic
+    font-style: italic;
 }
 
 .LosMasVendidos a {
