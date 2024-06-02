@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
 * {
     margin: 0; padding: 0;
@@ -97,7 +97,7 @@ section {
 }
 
 .inicio .contenido p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 0.5rem 0;
     max-width: 650px;
     text-align: justify;
@@ -133,11 +133,11 @@ section {
 }
 
 .LosMasVendidos .titulo h1 {
-padding-top: 50px;
-color: white;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 8px;
+    padding-top: 50px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 8px;
 }
 
 .LosMasVendidos .titulo span{
@@ -152,8 +152,13 @@ letter-spacing: 8px;
 }
 
 .LosMasVendidos .content .item {
-    max-width: 30vw;
+    max-width: 25vw;
     margin-top: 15px;
+}
+
+.LosMasVendidos .content .item:hover {
+    transform: scale(1.15);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 .LosMasVendidos .content .item img{
@@ -162,12 +167,13 @@ letter-spacing: 8px;
 }
 
 .LosMasVendidos .content .item h2{
-    font-family: "Baskervville", serif;
+    font-family: "Merriweather", serif;
     color: #0F456B;
+    font-style: italic
 }
 
 .LosMasVendidos a {
-    margin-top: 20px;
+    margin-top: 1.5%;
     border-radius: 10px;
 }
 
