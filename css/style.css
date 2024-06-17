@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 
+:root {
+    --clr-text-main: black;
+    --clr-accent: #0F456B;
+    --clr-accent-sec: #6DB8C1;
+}
+
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -12,7 +18,8 @@
 }
 
 html {
-    scroll-snap-type: y proximity ;
+    /* scroll-snap-type: y proximity; */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -36,8 +43,8 @@ header .logo {
     font-weight: bolder;
 }
 
-header .logo span {
-    color: #184B6F;
+.mart {
+    color: var(--clr-accent);
 }
 
 header nav a {
@@ -46,7 +53,7 @@ header nav a {
 }
 
 header a:hover {
-    color: #0F456B;
+    color: var(--clr-accent);
 }
 
 header .iconos {
@@ -59,7 +66,7 @@ header .iconos a {
 }
 
 section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
 }
 
 .inicio {
@@ -84,7 +91,7 @@ section {
 
 .inicio .contenido h5 {
     font-size: 2.2rem;
-    color: #0F456B;
+    color: var(--clr-accent);
 }
 
 .inicio .contenido p {
@@ -105,7 +112,7 @@ section {
 }
 
 .btn:hover {
-    background-color: #0F456B;
+    background-color: var(--clr-accent);
 }
 
 .footer {
@@ -114,12 +121,12 @@ section {
 
 .LosMasVendidos {
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 5vh;
     margin-bottom: 10vh;
 }
 
 .LosMasVendidos .titulo {
-    background-color: #0F456B;
+    background-color: var(--clr-accent);
     user-select: none;
 }
 
@@ -160,12 +167,67 @@ section {
 
 .LosMasVendidos .content .item h2{
     font-family: "Merriweather", serif;
-    color: #0F456B;
+    color: var(--clr-accent);
     font-style: italic;
 }
 
 .LosMasVendidos a {
     margin-top: 1.5%;
     border-radius: 10px;
+}
+
+.categorias .titulo {
+    margin-bottom: 20px;
+}
+
+.categorias .content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.categorias .content div {
+    background-color: red;
+    min-width: 220px;
+    min-height: 300px;
+}
+
+.Nosotros {
+    margin-top: 5vh;
+}
+
+.Nosotros .title {
+    text-align: justify;
+    padding: .5em 2em;
+}
+
+.columnas {
+    display: flex;
+    gap: 2em;
+    margin: 2em 2em;
+}
+
+.columnas h3 {
+    font-size: 28px;
+    color: var(--clr-accent-sec);
+    -webkit-text-stroke: 1px var(--clr-accent);
+}
+
+.columnas div {
+    flex-basis: 100%;
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.columnas div > *{
+    margin: .5em 2em ;
+    list-style: none;
+    text-align: center;
+}
+
+.columnas li {
+    font-size: 24px;
+    line-height: 2ch;
 }
 

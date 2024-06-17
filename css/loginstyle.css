@@ -1,11 +1,14 @@
 .login-signup {
     min-height: 100vh;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 .login-signup h1{
     text-align: center;
     margin-bottom: 20px;
+}
 
+.login-signup h1 span {
+    color: #184B6F;
 }
 .wrapper {
     width: 400px;
@@ -52,7 +55,7 @@
 }
 
 .remember-forgot p a {
-    color: #0F456B;
+    color: #184B6F;
     font-weight: 600;
 }
 
@@ -72,7 +75,7 @@
 }
 
 .loginBtn:hover, .registerBtn:hover {
-    background-color: #0F456B;
+    background-color: #184B6F;
 }
 
 .login-register {
@@ -81,7 +84,7 @@
 }
 
 .signUpLink, .loginLink{
-    color: #0F456B;
+    color: #184B6F;
     font-weight: bold;
     cursor: pointer;
 }
